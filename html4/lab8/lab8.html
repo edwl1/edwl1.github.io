@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 8</title>
+</head>
+<body>
+  <!-- Задание №1: Личная форма -->
+  <h3>Личная форма</h3>
+  <form>
+    <label for="firstName">Имя:</label>
+    <input type="text" id="firstName" name="firstName"><br><br>
+
+    <label for="lastName">Фамилия:</label>
+    <input type="text" id="lastName" name="lastName"><br><br>
+
+    <label for="address">Адрес:</label>
+    <input type="text" id="address" name="address"><br><br>
+
+    <label for="interests">Интересы:</label>
+    <input type="text" id="interests" name="interests"><br><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="comment">Комментарий:</label><br>
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+    <label for="birthdate">Дата рождения:</label><br>
+    <select id="day" name="day">
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <!-- ...другие дни... -->
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    <select id="month" name="month">
+      <option value="01">Январь</option>
+      <option value="02">Февраль</option>
+      <option value="03">Март</option>
+      <!-- ...другие месяцы... -->
+      <option value="11">Ноябрь</option>
+      <option value="12">Декабрь</option>
+    </select>
+    <select id="year" name="year">
+      <option value="1990">1990</option>
+      <option value="1991">1991</option>
+      <option value="1992">1992</option>
+      <!-- ...другие годы... -->
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+    </select><br><br>
+
+    <a href="https://edwl99.github.io" target="_blank">Перейти на другую страницу</a><br><br>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Очистить">
+  </form>
+
+  <!-- Задание №2: Опрос общественного мнения -->
+  <h3>Опрос общественного мнения</h3>
+  <form>
+    <label for="carBrand">Выберите марку автомобиля:</label>
+    <select id="carBrand" name="carBrand">
+      <option value="audi">Audi</option>
+      <option value="bmw">BMW</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="volkswagen">Volkswagen</option>
+      <option value="toyota">Toyota</option>
+      <option value="honda">Honda</option>
+    </select><br><br>
+
+    <label for="carColor">Выберите цвет автомобиля:</label>
+    <select id="carColor" name="carColor">
+      <option value="red">Красный</option>
+      <option value="blue">Синий</option>
+      <option value="black">Черный</option>
+      <option value="white">Белый</option>
+      <option value="silver">Серебристый</option>
+      <option value="gray">Серый</option>
+    </select><br><br>
+
+    <label for="opinion">Ваше мнение:</label><br>
+    <input type="radio" id="opinionPositive" name="opinion" value="positive">
+    <label for="opinionPositive">Положительное</label><br>
+    <input type="radio" id="opinionNegative" name="opinion" value="negative">
+    <label for="opinionNegative">Отрицательное</label><br><br>
+
+    <label for="commentOpinion">Комментарий:</label><br>
+    <textarea id="commentOpinion" name="commentOpinion" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Очистить">
+  </form>
+  <br>
+  <a href="../lab7/lab7.html" style="color: crimson;display: block; float: left;">lab7</a>
+  <a href="../lab9/lab9.html" style="color: crimson;display: block; float: right;">lab9</a>
+</body>
+</html>
