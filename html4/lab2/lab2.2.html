@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2. Форматирование текста на Web-странице по образцу</title>
+    <style>
+        @keyframes typing {
+            from { width: 0; } /* Анимация начинается с ширины 0 */
+            to { width: 100%; } /* Анимация заканчивается с полной шириной (100%) */
+        }   
+        .typewriter {
+            overflow: hidden; /* Задаёт обрезание содержимого, чтобы текст не вытекал за пределы блока */
+            white-space: nowrap; /* Блокирует переносы строк, чтобы текст печатался в одну строку */
+            animation: typing 5s steps(40) infinite; /* Применяет анимацию "typing" с длительностью 5 секунд и повторением бесконечно */
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <p>Здесь находиться цитата</p>
+    <p>Фрагменты текста можно выделять <strong>жирным</strong>
+    или <i>наклонным</i> шрифтом.</p>
+    <p>Кроме того, можно включать в текст
+    фрагменты с фиксированной шириной символа</p>
+    <p style="text-align: right;" class="typewriter">(имитация пишущей машинки).</p>
+    <p>Текст может быть <s>зачеркнутым</s>str или <u>подчеркнутым.</u></p>
+    <p>Можно также включать элементы, создающие эффект <sub>нижнего индекса</sub>  или <sup>верхнего индекса</sup>.</p>
+    <p style="font-size: larger;text-align: center;">Использование увеличения шрифта <strong>В HTML5</strong> style="font-size: larger;"</p>
+    <p style="font-size: smaller;text-align: center;">Использование уменьшения шрифта <strong>В HTML5</strong> style="font-size: smaller;"</p>
+    <p style="text-align: right;"><strong><i>Кроме физических существуют также логические стили</i></strong></p>
+    <!-- Использование акцента -->
+    <em>Текст с акцентом</em><br>
+    <!-- Использование сильного акцента -->
+    <strong>Текст с сильным акцентом</strong><br>
+    <!-- Фрагмент исходного текста -->
+    <code>Фрагмент исходного текста</code><br>
+    <!-- Использование образца -->
+    <samp>Текст, представляющий образец</samp><br>
+    <!-- Текст, вводимый с клавиатуры -->
+    <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd><br>
+    <!-- Значение переменной -->
+    <var>Значение переменной</var><br>
+    <!-- Использование элемента CITE -->
+    <cite>Источник цитаты</cite><br><br>
+    <!-- Формат адреса -->
+    <address>
+    Имя Фамилия<br>
+    Улица и номер дома<br>
+    Почтовый индекс, Город<br>
+    Страна
+    </address>
+    <p style="text-align: center;">Использование <strong>В HTML5</strong> style="text-align: center;"</p>
+    <div style="text-align: right;">Использование элемента DIV <br> Элемент BR обеспечивает разрыв  строки </div><br>
+    <a href="../lab2/lab2.1.html" style="color: crimson;display: block; float: left;">lab2.1</a>
+    <a href="../lab2/lab2.3.html" style="color: crimson;display: block; float: right;">lab2.3</a>
+</body>
+</html>
