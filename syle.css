@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('./site/font/Manrope-Bold.ttf') format('truetype'),
+        url('./site/font/Manrope-ExtraBold.ttf') format('truetype'),
+        url('./site/font/Manrope-ExtraLight.ttf') format('truetype'),
+        url('./site/font/Manrope-Light.ttf') format('truetype'),
+        url('./site/font/Manrope-Medium.ttf') format('truetype'),
+        url('./site/font/Manrope-Regular.ttf') format('truetype'),
+        url('./site/font/Manrope-SemiBold.ttf') format('truetype');
+}
+::selection {
+    background-color: gold;
+    color: black;
+}
+#photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin: auto;
+    margin-top: 15%;
+}
+#name {
+    margin-top: 25px;
+    display: block;
+    color: #000;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+#e-mail {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    color: #000;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    width: 365px;
+    height: 26px;
+    text-decoration: none;
+}
+#temporary-projects {
+    display: block;
+    background: black;
+    color: white;
+    width: 365px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: lighter;
+}
+@media screen and (max-width: 600px) {
+    #temporary-projects {
+        display: block;
+        background: black;
+        color: white;
+        width: 300px;
+        line-height: 30px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: Manrope;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+    #e-mail {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        text-align: center;
+        color: #000;
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        width: 300px;
+        height: 26px;
+        text-decoration: none;
+    }
+}
