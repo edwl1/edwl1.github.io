@@ -1,48 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="lab.js" defer></script>
-    <title>Document</title>
-</head>
-<body class="container py-3">
-    <p>Лабораторная работа 1(Теоретический материал)</p>
-    <button onclick="lab1()" class="btn btn-dark mb-2">кнопка alert</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+        <script src="lab.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body class="container py-3">
 
-    <p>Лабораторная работа 2(Теоретический материал)</p>
-    <button onclick="lab2()" class="btn btn-dark mb-2">кнопка console.log</button>
+        <div class="accordion" id="accordionExample">
 
-    <p>Лабораторная работа 3(Теоретический материал)</p>
-    <p>Лабораторная работа 4(Теоретический материал)</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        Лабораторная работа #1 (Теоретический материал)
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button onclick="lab1()" class="btn btn-warning">кнопка alert</button>
+                        <a href="https://itchief.ru/javascript/introduction" class="btn btn-dark" target="_blank" target="_blank">Листинг</a>
+                    </div>
+                </div>
+            </div>
 
-    <p>Лабораторная работа №5</p>
-    <button onclick="lab5()" class="btn btn-dark mb-2">кнопка prompt + confirm</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                        Лабораторная работа #2 (Теоретический материал)
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button onclick="lab2()" class="btn btn-warning">кнопка console.log</button>
+                        <a href="https://itchief.ru/javascript/variables-and-types" class="btn btn-dark" target="_blank">Листинг</a>
+                    </div>
+                </div>
+            </div>
 
-    <p>Лабораторная работа №6</p>
-    <button onclick="lab6_1()" class="btn btn-dark mb-2">num = num > 4 ? num+5 : num</button>
-    <button onclick="lab6_2()" class="btn btn-dark mb-2">четность числа</button>
-    <button onclick="lab6_3()" class="btn btn-dark mb-2">больше,меньше,равно нулю</button>
-    <button onclick="lab6_4()" class="btn btn-dark mb-2">день недели от 1 до 7</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                        Лабораторная работа #3 (Теоретический материал)
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="https://itchief.ru/javascript/operators" class="btn btn-dark" target="_blank">Листинг</a>
+                    </div>
+                </div>
+            </div>
 
-    <p>Лабораторная работа 7(Теоретический материал)</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                        Лабораторная работа #4 (Теоретический материал)
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="https://itchief.ru/javascript/logical-operators" class="btn btn-dark" target="_blank">Листинг</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                        Лабораторная работа #5
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button onclick="lab5()" class="btn btn-warning mb-2">кнопка prompt + confirm</button>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                        Лабораторная работа #6
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button onclick="lab6_1()" class="btn btn-warning mb-2">num = num > 4 ? num+5 : num</button>
+                        <button onclick="lab6_2()" class="btn btn-warning mb-2">четность числа</button>
+                        <button onclick="lab6_3()" class="btn btn-warning mb-2">больше,меньше,равно нулю</button>
+                        <button onclick="lab6_4()" class="btn btn-warning mb-2">день недели от 1 до 7</button>
+                    </div>
+                </div>
+            </div>
+                            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                        Лабораторная работа #7 (Теоретический материал)
+                    </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="https://itchief.ru/javascript/arrays" class="btn btn-dark" target="_blank">Листинг</a>
+                    </div>
+                </div>
+            </div>
+                            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                        Лабораторная работа #8
+                    </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button onclick="lab8_a()" class="btn btn-warning mb-2">console.log("Сумма чисел в массиве:", total);</button>
+                        <button onclick="lab8_b()" class="btn btn-warning mb-2">console.log("Максимальное число в массиве:", max);</button>
+                        <button onclick="lab8_1()" class="btn btn-warning mb-2">Перевернутое число</button>
+                        <button onclick="lab8_2()" class="btn btn-warning mb-2">Самая большая цифра в числе</button>
+                        <button onclick="lab8_3()" class="btn btn-warning mb-2">Сумма первой и последней цифры целого числа</button>
+                    </div>
+                </div>
+            </div>
+                            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                        Лабораторная работа #9 (Теоретический материал)
+                    </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="https://itchief.ru/javascript/functions" class="btn btn-dark" target="_blank">Листинг</a>
+                    </div>
+                </div>
+            </div>
+                            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading10">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                        Лабораторная работа #10
+                    </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button onclick="lab10_linear_algorithm_1()" class="btn btn-warning mb-2">Даны два числа. Найти среднее арифметическое их квадратов и среднее арифметическое их модулей.</button>
+                        <button onclick="lab10_linear_algorithm_2()" class="btn btn-warning mb-2">Найти периметр и площадь прямоугольного треугольника, если даны длины его катетов a и b.</button>
+                        <button onclick="lab10_linear_algorithm_3()" class="btn btn-warning mb-2">Дана длина ребра куба. Найти площадь грани, площадь полной поверхности и объем этого куба.</button>
+                        <button onclick="lab10_linear_algorithm_4()" class="btn btn-warning mb-2">Найти длину окружности и площадь круга заданного радиуса R</button>
+                        <button onclick="lab10_linear_algorithm_5()" class="btn btn-warning mb-2">Дана сторона равностороннего треугольника. Найти площадь этого треугольника и радиусы вписанной и описанной окружностей</button>
+                    </div>
+                </div>
+            </div>
+                            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading11">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                        Лабораторная работа #11 (Теоретический материал)
+                    </button>
+                </h2>
+                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="https://itchief.ru/javascript/function-expression" class="btn btn-dark" target="_blank">Листинг</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
-    <p>Лабораторная работа №8</p>
-    <button onclick="lab8_a()" class="btn btn-dark mb-2">console.log("Сумма чисел в массиве:", total);</button>
-    <button onclick="lab8_b()" class="btn btn-dark mb-2">console.log("Максимальное число в массиве:", max);</button>
-    <button onclick="lab8_1()" class="btn btn-dark mb-2">Перевернутое число</button>
-    <button onclick="lab8_2()" class="btn btn-dark mb-2">Самая большая цифра в числе</button>
-    <button onclick="lab8_3()" class="btn btn-dark mb-2">Сумма первой и последней цифры целого числа</button>
-    
-    <p>Лабораторная работа 9(Теоретический материал)</p>
-
-    <p>Лабораторная работа №10</p>
-    <button onclick="lab10_linear_algorithm_1()" class="btn btn-dark mb-2">Даны два числа. Найти среднее арифметическое их квадратов и среднее арифметическое их модулей.</button>
-    <button onclick="lab10_linear_algorithm_2()" class="btn btn-dark mb-2">Найти периметр и площадь прямоугольного треугольника, если даны длины его катетов a и b.</button>
-    <button onclick="lab10_linear_algorithm_3()" class="btn btn-dark mb-2">Дана длина ребра куба. Найти площадь грани, площадь полной поверхности и объем этого куба.</button>
-    <button onclick="lab10_linear_algorithm_4()" class="btn btn-dark mb-2">Найти длину окружности и площадь круга заданного радиуса R</button>
-    <button onclick="lab10_linear_algorithm_5()" class="btn btn-dark mb-2">Дана сторона равностороннего треугольника. Найти площадь этого треугольника и радиусы вписанной и описанной окружностей</button>
-    <p>Лабораторная работа 11(Теоретический материал)</p>
-</body>
+    </body>
 </html>
